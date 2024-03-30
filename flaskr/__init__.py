@@ -23,8 +23,8 @@ def create_app(test_config=None):
         pass
 
     #Create a route
-    @app.route('/hello')
-    def hello():
+    @app.route('/')
+    def index():
         return "Hello world!"
 
     # attach appropriate db funtions to app upon creation
